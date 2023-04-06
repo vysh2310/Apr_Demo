@@ -6,7 +6,6 @@ x=1;
 actuator_position = 2;  /* default*/
 tmp = 0;                        /* values */
 magnitude = sensor_pos1 / 100;
-//y = magnitude + 5;
 y=1;
 
 while (actuator_position < 10)
