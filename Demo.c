@@ -1,24 +1,21 @@
-#define false 0
-#define MAX_SIZE 10
-int tab[MAX_SIZE];
-int* arr = tab;
-static int interpolation(void);
-static int interpolation(void) {
-    int i, item = 0;
-    int found = false;
+int where_are_the_errors(int input) {
+   int x,y,k;
 
+   k = input / 100;
+   x = 2;
+   y = 1;
+   while (x < 10) {
+      x++;
+      y = y + 1;
+   }
 
-    for (i = 0; i < 10; i++) {
-        arr++;
-        if ((found == false) && (*arr > 16)) {
-            found = 1;
-            item = i;
-        }
-    }
-    *arr = 20;
-    return item;
+   if ((3*k + 100) > 43) {
+      y++;
+      x = x / (x - y);
+   }
+   return x;	
 }
 
 int main(void){
-	interpolation();
+	where_are_the_errors(8);
 }
