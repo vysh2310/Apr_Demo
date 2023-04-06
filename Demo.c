@@ -1,4 +1,4 @@
-int new_position(int sensor_pos1, int sensor_pos2,int position1) 
+int new_position(int sensor_pos1, int sensor_pos2) 
 {
 int actuator_position;
 int x, y, tmp, magnitude;
@@ -11,7 +11,7 @@ y = magnitude + 5;
 while (actuator_position < 10)
 	{
 	actuator_position++;
-     	}
+    }
 if ((3*magnitude + 100) > 43)
 	{
 	magnitude++;	
